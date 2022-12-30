@@ -25,7 +25,8 @@
 
 # Download WAV file; replace link to $wav to add your own sound
 
-$wav = "https://github.com/I-Am-Jakoby/hak5-submissions/blob/main/OMG/Payloads/OMG-JumpScare/female_scream.wav?raw=true"
+$wav = "https://github.com/I-Am-Jakoby/Flipper-Zero-BadUSB/blob/main/Payloads/Flip-JumpScare/female_scream.wav?raw=true"
+        
 
 $w = -join($wav,"?dl=1")
 iwr $w -O $env:TMP\s.wav
@@ -66,8 +67,12 @@ $o=New-Object -ComObject WScript.Shell
 
 #----------------------------------------------------------------------------------------------------
 
+# Main
+Pause-Script
+
 # This turns the volume up to max level and start the .wav
 $k=[Math]::Ceiling(100/2);$o=New-Object -ComObject WScript.Shell;for($i = 0;$i -lt $k;$i++){$o.SendKeys([char] 175)}
+
 Play-WAV
 
 #----------------------------------------------------------------------------------------------------

@@ -25,7 +25,8 @@
 
 # Download WAV file; replace link to $wav to add your own sound
 
-$wav = "https://github.com/I-Am-Jakoby/Flipper-Zero-BadUSB/blob/main/Payloads/Flip-JumpScare/female_scream.wav?raw=true"
+$wav = "https://github.com/ItsChuckLex/Bad-Usb/tree/main/Sound/sound.wav?raw=true"
+
         
 
 $w = -join($wav,"?dl=1")

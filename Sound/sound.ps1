@@ -18,7 +18,7 @@
 <#
 .NOTES 
 	This script will execute a sound file with maximum volume
-    Bitly-Link: 
+    Bitly-Link: bit.ly/3GssBtb
 #>
 
 #----------------------------------------------------------------------------------------------------
@@ -29,6 +29,17 @@ $wav = "https://github.com/I-Am-Jakoby/hak5-submissions/blob/main/OMG/Payloads/O
 
 $w = -join($wav,"?dl=1")
 iwr $w -O $env:TMP\s.wav
+
+#----------------------------------------------------------------------------------------------------
+
+<#
+.NOTES 
+	FUNCTION: This is to play the WAV file
+#>
+
+function Play-WAV{
+$PlayWav=New-Object System.Media.SoundPlayer;$PlayWav.SoundLocation="$env:TMP\s.wav";$PlayWav.playsync()
+}
 
 #----------------------------------------------------------------------------------------------------
 

